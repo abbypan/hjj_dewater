@@ -151,7 +151,8 @@ function get_main_floors(option) {
             var id = f[j].id;
             if(is_floor_overflow(id,option)) return main_floors;
             main_floors[id] = f[j];
-            $('#dewater_floor_num').html("floor : " + id);
+if(id % 20 == 0)
+            $('#dewater_floor_num').html("floor : " + id) ;
         }
     }
     return main_floors; 
