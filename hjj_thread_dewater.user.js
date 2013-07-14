@@ -33,7 +33,7 @@ function add_dewater_form() {
             每楼最少<input id="min_word_num" name="min_word_num" size="5"/>字,\
             <input type="checkbox" id="only_poster" name="only_poster">只看楼主,\
             <input type="checkbox" id="with_toc" name="with_toc" checked />生成目录, \
-            <input type="submit" value="脱水" onclick="main_dewater_form()" />\
+            <input type="submit" value="脱水" onclick="dewater_thread()" />\
             </div>');
 
     $('title').after($dewater_div);
