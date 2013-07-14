@@ -41,7 +41,7 @@ function merge_floors_info ( info , content ) {
 }
 
 function get_page_floors(u) {
-    $('#dewater_title').html("正在取 ：" + u + '<span id="get_floor_num"></span>');
+    $('#dewater_title').html("正在取 ：" + u);
     var floors_info = new Array();
     $.ajax({
         type:"get",
@@ -151,7 +151,7 @@ function get_main_floors(option) {
             var id = f[j].id;
             if(is_floor_overflow(id,option)) return main_floors;
             main_floors[id] = f[j];
-            $('#get_floor_num').html(id);
+            $('#dewater_floor_num').html("floor : " + id);
         }
     }
     return main_floors; 
