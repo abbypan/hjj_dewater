@@ -249,6 +249,7 @@ function main_dewater_form() {
         add_floor_content('#dewater_floors', f);
     }
 
+    $('#dewater_floor_num').html('');
     $('body').html($('#dewater_div').html());
     set_dewater_css();
 }
