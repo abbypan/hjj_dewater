@@ -43,7 +43,6 @@ function add_dewater_div() {
     $main_floors = $('\
             <div id="dewater_div">\
             <div id="dewater_title"></div>\
-            <div id="dewater_floor_num"></div>\
             <div id="dewater_toc"></div>\
             <div id="dewater_floors"></div></div>');
     $('title').after($main_floors);

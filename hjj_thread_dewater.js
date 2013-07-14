@@ -151,8 +151,6 @@ function get_main_floors(option) {
             var id = f[j].id;
             if(is_floor_overflow(id,option)) return main_floors;
             main_floors[id] = f[j];
-if(id % 20 == 0)
-            $('#dewater_floor_num').html("floor : " + id) ;
         }
     }
     return main_floors; 
@@ -250,7 +248,6 @@ function main_dewater_form() {
         add_floor_content('#dewater_floors', f);
     }
 
-    $('#dewater_floor_num').html('');
     $('body').html($('#dewater_div').html());
     set_dewater_css();
 }
