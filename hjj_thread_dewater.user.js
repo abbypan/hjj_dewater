@@ -12,7 +12,7 @@
 // @downloadURL   http://userscripts.org/scripts/source/173233.user.js
 // @updateURL     http://userscripts.org/scripts/source/173233.meta.js
 // @resource      hjj_thread_dewater https://raw.github.com/abbypan/hjj_thread_dewater/master/hjj_thread_dewater.js
-// @resource      bbs_dewater https://raw.github.com/abbypan/zhd_dewater/master/bbs_dewater.js
+// @resource      bbs_dewater https://raw.github.com/abbypan/bbs_dewater/master/bbs_dewater.js
 // ==/UserScript==
 //
 // --------------------------------------------------------------------
