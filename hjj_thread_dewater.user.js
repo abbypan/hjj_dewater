@@ -2,15 +2,13 @@
 //
 // ==UserScript==
 // @name          hjj_thread_dewater 
-// @namespace     http://abbypan.github.com/
+// @namespace     http://abbypan.github.io/
 // @version       0.2
 // @author        Abby Pan (abbypan@gmail.com)
 // @description   红晋江( http://bbs.jjwxc.net ) 贴子脱水
-// @copyright     2013, Abby Pan (http://abbypan.github.com/) 
+// @copyright     2013, Abby Pan (http://abbypan.github.io/) 
 // @grant         GM_getResourceText
 // @include       http://bbs.jjwxc.net/showmsg.php?board=*&id=*
-// @downloadURL   http://userscripts.org/scripts/source/173233.user.js
-// @updateURL     http://userscripts.org/scripts/source/173233.meta.js
 // @resource      hjj_thread_dewater https://raw.github.com/abbypan/hjj_thread_dewater/master/hjj_thread_dewater.js
 // @resource      bbs_dewater https://raw.github.com/abbypan/bbs_dewater/master/bbs_dewater.js
 // ==/UserScript==
