@@ -10,7 +10,7 @@
 // @grant         GM_getResourceText
 // @include       http://bbs.jjwxc.net/showmsg.php?board=*&id=*
 // @resource      hjj_thread_dewater https://raw.github.com/abbypan/hjj_thread_dewater/master/hjj_thread_dewater.js
-// @resource      bbs_dewater https://raw.github.com/abbypan/bbs_dewater/master/bbs_dewater.js
+// @resource      bbs_dewater https://github.com/abbypan/bbs_dewater/raw/master/bbs_dewater.js
 // ==/UserScript==
 //
 // --------------------------------------------------------------------
