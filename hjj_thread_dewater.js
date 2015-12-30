@@ -1,5 +1,6 @@
 function banner_path() {
-    return 'title';
+    return 'div[id="pager_top"]';
+    //return 'div[style="float: left;"]';
 }
 
 function extract_floor_info(info) {
