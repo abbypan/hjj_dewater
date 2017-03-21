@@ -1,7 +1,7 @@
 ﻿// --------------------------------------------------------------------
 //
 // ==UserScript==
-// @name          hjj_thread_dewater 
+// @name          hjj_dewater 
 // @namespace     http://abbypan.github.io/
 // @version       0.2
 // @author        Abby Pan (abbypan@gmail.com)
@@ -9,7 +9,7 @@
 // @copyright     2013, Abby Pan (http://abbypan.github.io/) 
 // @grant         GM_getResourceText
 // @include       http://bbs.jjwxc.net/showmsg.php?board=*&id=*
-// @resource      hjj_thread_dewater https://raw.githubusercontent.com/abbypan/hjj_thread_dewater/master/hjj_thread_dewater.js
+// @resource      hjj_dewater https://raw.githubusercontent.com/abbypan/hjj_dewater/master/hjj_dewater.js
 // @resource      bbs_dewater https://raw.githubusercontent.com/abbypan/bbs_dewater/master/bbs_dewater.js
 // 
 // ==/UserScript==
@@ -32,7 +32,7 @@ function GM_wait() {
     if (typeof unsafeWindow.jQuery == 'undefined') {
         window.setTimeout(GM_wait, 100);
     } else {
-        add_js_file('hjj_thread_dewater');
+        add_js_file('hjj_dewater');
         add_js_file('bbs_dewater');
     }
 }
