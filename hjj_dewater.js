@@ -26,7 +26,8 @@ function page_charset() {
 }
 
 function get_topic_name() {
-	return $('td[bgcolor="#E8F3FF"]:first').text();
+    var c = $('title').text().replace(/\[.*?\]\s*/,'');
+    return c;
 }
 
 function get_page_num() {
