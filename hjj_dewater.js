@@ -1,16 +1,15 @@
 function banner_path() {
-    return 'div[id="pager_top"]';
+    return 'div[id="msgsubject"]';
+    //return 'div[id="pager_top"]';
     //return 'div[style="float: left;"]';
 }
 
 function extract_floor_info(info) {
 	var c = info.html();
-	var w = info.text().length;
     var meta = info.parents("tr:eq(1)").next().text();
 	var m = meta.match(/№(\d+).+?☆☆☆(.*?)于([\d\s:-]+)留言☆☆☆/);
 	return {
 		content: c,
-		word_num: w, 
 		id: parseInt(m[1]),
 		poster: m[2] || '无名氏',
 		time: m[3]
