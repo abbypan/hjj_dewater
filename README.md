@@ -3,9 +3,7 @@ hjj_dewater
 
 红晋江( http://bbs.jjwxc.net ) 贴子脱水
  
-安装：[greasyfork](https://greasyfork.org/en/scripts/4073-hjj-dewater)
-
-结合 [Save Back to File from DOM](https://addons.mozilla.org/zh-CN/firefox/addon/save-back-to-file-from-dom/?src=api) 扩展就可以保存脱水后的贴子到本地
+安装：[hjj-dewater](https://greasyfork.org/en/scripts/4073-hjj-dewater)
 
 贴子内添加脱水按钮
 
