@@ -5,7 +5,7 @@ function banner_path() {
 }
 
 function extract_floor_info(info) {
-	var c = info.html();
+	var c = info.find("div:eq(1)").html();
     var meta = info.parents("tr:eq(1)").next().text();
 	var m = meta.match(/№(\d+).+?☆☆☆(.*?)于([\d\s:-]+)留言☆☆☆/);
 	return {
