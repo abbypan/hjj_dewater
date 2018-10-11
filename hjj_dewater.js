@@ -7,14 +7,15 @@ function banner_path() {
 function extract_floor_info(info) {
 	//var c = info.find("div").first().html();
 	//var c = info.html();
-    var c;
-    if(info.find('a[class="replybodyshow"]')){
-        c = info.find("div").first().html();
-    }else{
-        var quote = info.find('div[class="quotebodyinner"]').first().html();
-        var reply = info.find('div[class="replybodyinner"]').first().html();
-        c = "<div>" + quote + "</div><div>" + reply + "</div>";
+    var c='';
+    var quote = info.find('div[class="quotebodyinner"]').first().html();
+    if(quote){
+        c = c + "<div>" + quote + "</div>\n";
     }
+
+    var reply = info.find('div[class="replybodyinner"]').first().html();
+    if(reply){
+        c = c + "<div>" + reply + "</div>\n";
 
     var meta = info.parents("tr:eq(1)").next().text();
 	var m = meta.match(/№(\d+).+?☆☆☆(.*?)于([\d\s:-]+)留言☆☆☆/);
