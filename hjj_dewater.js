@@ -16,6 +16,7 @@ function extract_floor_info(info) {
     var reply = info.find('div[class="replybodyinner"]').first().html();
     if(reply){
         c = c + "<div>" + reply + "</div>\n";
+    }
 
     var meta = info.parents("tr:eq(1)").next().text();
 	var m = meta.match(/№(\d+).+?☆☆☆(.*?)于([\d\s:-]+)留言☆☆☆/);
