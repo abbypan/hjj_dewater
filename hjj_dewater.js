@@ -11,7 +11,9 @@ function extract_floor_info(info) {
     if(info.find('a[class="replybodyshow"]')){
         c = info.find("div").first().html();
     }else{
-        c = info.html();
+        var quote = info.find('div[class="quotebodyinner"]').first().html();
+        var reply = info.find('div[class="replybodyinner"]').first().html();
+        c = "<div>" + quote + "</div><div>" + reply + "</div>";
     }
 
     var meta = info.parents("tr:eq(1)").next().text();
