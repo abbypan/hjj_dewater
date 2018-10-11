@@ -7,8 +7,13 @@ function banner_path() {
 function extract_floor_info(info) {
 	//var c = info.find("div").first().html();
 	//var c = info.html();
-    var all_flag = info.find('a[class="replybodyshow"]');
-	var c = all_flag ? info.find("div").first().html() : info.html();
+    var c;
+    if(info.find('a[class="replybodyshow"]')){
+        c = info.find("div").first().html();
+    }else{
+        c = info.html();
+    }
+
     var meta = info.parents("tr:eq(1)").next().text();
 	var m = meta.match(/№(\d+).+?☆☆☆(.*?)于([\d\s:-]+)留言☆☆☆/);
 	return {
