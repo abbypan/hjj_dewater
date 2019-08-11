@@ -8,10 +8,12 @@ function extract_floor_info(info) {
 	//var c = info.find("div").first().html();
 	//var c = info.html();
     var c='';
-    var quote = info.find('div[class="quotebodyinner"]').first().html();
-    if(quote){
-        c = c + "<div>" + quote + "</div>\n";
+
+    var quote = info.find('div[class="quotebodyinner"]').first();
+    if(! quote){
+        quote = info.find('div[id="topic"]').first();
     }
+    c = c + "<div>" + quote.html() + "</div>\n";
 
     var reply = info.find('div[class="replybodyinner"]').first().html();
     if(reply){
