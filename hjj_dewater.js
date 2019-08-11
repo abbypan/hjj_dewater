@@ -5,19 +5,15 @@ function banner_path() {
 }
 
 function extract_floor_info(info) {
-	//var c = info.find("div").first().html();
-	//var c = info.html();
     var c='';
-
-    var quote = info.find('div[class="quotebodyinner"]').first();
-    if(! quote){
-        quote = info.find('div[id="topic"]').first();
-    }
-    c = c + "<div>" + quote.html() + "</div>\n";
-
-    var reply = info.find('div[class="replybodyinner"]').first().html();
-    if(reply){
-        c = c + "<div>" + reply + "</div>\n";
+    
+    var content_xpaths = [ 'div[id="topic"]', 'div[class="quotebodyinner"]', 'div[class="replybodyinner"]' ];
+    for (var i in content_xpaths) {
+        var p = content_xpaths[i];
+        var cc = info.find(p).first();
+        if(cc){
+            c = c + "<div>" + cc.html() + "</div>\n";
+        }
     }
 
     var meta = info.parents("tr:eq(1)").next().text();
