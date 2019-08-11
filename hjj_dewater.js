@@ -11,7 +11,7 @@ function extract_floor_info(info) {
     for (var i in content_xpaths) {
         var p = content_xpaths[i];
         var cc = info.find(p).first().html();
-        if(cc){
+        if(cc != undefined){
             c = c + "<div>" + cc + "</div>\n";
         }
     }
