@@ -10,9 +10,9 @@ function extract_floor_info(info) {
     var content_xpaths = [ 'div[id="topic"]', 'div[class="quotebodyinner"]', 'div[class="replybodyinner"]' ];
     for (var i in content_xpaths) {
         var p = content_xpaths[i];
-        var cc = info.find(p).first();
+        var cc = info.find(p).first().html();
         if(cc){
-            c = c + "<div>" + cc.html() + "</div>\n";
+            c = c + "<div>" + cc + "</div>\n";
         }
     }
 
